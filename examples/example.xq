@@ -1,5 +1,7 @@
 (
-'3.8 Logical Expressions',
-1 eq 1 and 2 eq 2,
-1 eq 1 or 2 eq 3
-)
+ '3.5 Arithmetic Expressions',
+ -3 div 2,
+ -3 idiv 2,
+ $emp/hiredate - $emp/birthdate,
+ $unit-price - $unit-discount
+ )

@@ -1,3 +1,13 @@
+==================
+3.5 Arithmetic Expressions
+==================
+
+ 3 div 2
+
+---
+
+(module (multiplicative_expr (integer_literal) (integer_literal)))
+
 
 ==================
 3.6 String Concatenation Expressions

@@ -3,5 +3,7 @@
  -3 div 2,
  -3 idiv 2,
  $emp/hiredate - $emp/birthdate,
- $unit-price - $unit-discount
+ $unit-price - $unit-discount,
+ -$bellcost + $whistlecost,
+ -($bellcost + $whistlecost)
  )

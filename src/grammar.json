@@ -211,6 +211,10 @@
               },
               {
                 "type": "SYMBOL",
+                "name": "unary_expr"
+              },
+              {
+                "type": "SYMBOL",
                 "name": "bang_expr"
               },
               {
@@ -1772,42 +1776,24 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "FIELD",
-            "name": "operator",
-            "content": {
-              "type": "SYMBOL",
-              "name": "unary_op"
-            }
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "STRING",
+                "value": "+"
+              },
+              {
+                "type": "STRING",
+                "value": "-"
+              }
+            ]
           },
           {
-            "type": "FIELD",
-            "name": "operand",
-            "content": {
-              "type": "SYMBOL",
-              "name": "_primary"
-            }
+            "type": "SYMBOL",
+            "name": "_primary"
           }
         ]
       }
-    },
-    "unary_op": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "TOKEN",
-          "content": {
-            "type": "STRING",
-            "value": "+"
-          }
-        },
-        {
-          "type": "TOKEN",
-          "content": {
-            "type": "STRING",
-            "value": "-"
-          }
-        }
-      ]
     },
     "string_concat_expr": {
       "type": "PREC_LEFT",
